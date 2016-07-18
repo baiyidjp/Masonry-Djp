@@ -1,25 +1,184 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="A9W-Oh-Lo5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="201607060" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hX4-bn-71R">
+                                <rect key="frame" x="16" y="64" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Fqs-4C-nBa"/>
+                                </constraints>
+                                <state key="normal" title="Masonry基本用法"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9b-Bi-zUc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="201607061" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvI-NI-tRk">
+                                <rect key="frame" x="16" y="114" width="343" height="50"/>
+                                <state key="normal" title="Masonry动画更新约束"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GmW-hp-AZn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="201607062" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxS-8A-1sq">
+                                <rect key="frame" x="16" y="164" width="343" height="50"/>
+                                <state key="normal" title="Masonry动画重新添加约束"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EKm-GK-biO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="201607063" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erm-Iu-k91">
+                                <rect key="frame" x="16" y="214" width="343" height="50"/>
+                                <state key="normal" title="Masonry整体动画更新约束"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RlW-sx-SBu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="201607064" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kjf-yI-vqw">
+                                <rect key="frame" x="16" y="264" width="343" height="50"/>
+                                <state key="normal" title="Masonry复合view循环约束"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ztv-VY-g04"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="201607065" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEh-q5-nAx">
+                                <rect key="frame" x="16" y="314" width="343" height="50"/>
+                                <state key="normal" title="Masonry比例约束"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ABI-gB-LyE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="201607067" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8E-Tb-Jmc">
+                                <rect key="frame" x="16" y="414" width="343" height="50"/>
+                                <state key="normal" title="Masonry tableViewCell布局"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cHy-yg-Q8Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="201607068" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43k-MO-HNs">
+                                <rect key="frame" x="16" y="464" width="343" height="50"/>
+                                <state key="normal" title="Masonry ScrollView循环布局"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RsG-jP-xqs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="201607070" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3D-02-0Mp">
+                                <rect key="frame" x="16" y="564" width="343" height="50"/>
+                                <state key="normal" title="Masonry ScrollView实战"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MhG-wd-CH7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="201607069" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JId-1I-Sfj">
+                                <rect key="frame" x="16" y="514" width="343" height="50"/>
+                                <state key="normal" title="Masonry 复杂scrollView布局"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MVq-gm-FXq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="201607066" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCs-Lt-5jp">
+                                <rect key="frame" x="16" y="364" width="343" height="50"/>
+                                <state key="normal" title="Masonry BaseAnimated"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qrh-cZ-pmO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hCs-Lt-5jp" firstAttribute="height" secondItem="KEh-q5-nAx" secondAttribute="height" id="05A-Ev-rpz"/>
+                            <constraint firstItem="43k-MO-HNs" firstAttribute="width" secondItem="O8E-Tb-Jmc" secondAttribute="width" id="2j3-Pe-ujL"/>
+                            <constraint firstItem="O8E-Tb-Jmc" firstAttribute="centerX" secondItem="KEh-q5-nAx" secondAttribute="centerX" id="2qY-aS-PK4"/>
+                            <constraint firstItem="hX4-bn-71R" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5UF-1b-ZRU"/>
+                            <constraint firstItem="JId-1I-Sfj" firstAttribute="height" secondItem="43k-MO-HNs" secondAttribute="height" id="5ae-ge-FBg"/>
+                            <constraint firstItem="DvI-NI-tRk" firstAttribute="height" secondItem="hX4-bn-71R" secondAttribute="height" id="7u1-tL-gzQ"/>
+                            <constraint firstItem="Erm-Iu-k91" firstAttribute="width" secondItem="GxS-8A-1sq" secondAttribute="height" multiplier="56:5" id="8Xy-Xb-pUn"/>
+                            <constraint firstItem="hCs-Lt-5jp" firstAttribute="top" secondItem="KEh-q5-nAx" secondAttribute="bottom" id="9og-S9-E1t"/>
+                            <constraint firstItem="Erm-Iu-k91" firstAttribute="height" secondItem="GxS-8A-1sq" secondAttribute="height" id="AOq-j8-Zq9"/>
+                            <constraint firstItem="KEh-q5-nAx" firstAttribute="centerX" secondItem="Kjf-yI-vqw" secondAttribute="centerX" id="DER-mA-HBr"/>
+                            <constraint firstItem="Kjf-yI-vqw" firstAttribute="centerX" secondItem="Erm-Iu-k91" secondAttribute="centerX" id="ETP-QK-bUs"/>
+                            <constraint firstItem="Kjf-yI-vqw" firstAttribute="top" secondItem="Erm-Iu-k91" secondAttribute="bottom" id="FaR-1q-c8L"/>
+                            <constraint firstItem="Erm-Iu-k91" firstAttribute="width" secondItem="GxS-8A-1sq" secondAttribute="width" id="J2D-VC-8t2"/>
+                            <constraint firstItem="GxS-8A-1sq" firstAttribute="width" secondItem="DvI-NI-tRk" secondAttribute="width" id="J2H-nS-wE0"/>
+                            <constraint firstItem="KEh-q5-nAx" firstAttribute="height" secondItem="Kjf-yI-vqw" secondAttribute="height" id="JJS-9T-nlM"/>
+                            <constraint firstItem="GxS-8A-1sq" firstAttribute="height" secondItem="DvI-NI-tRk" secondAttribute="height" id="Ma5-9h-4T8"/>
+                            <constraint firstItem="Erm-Iu-k91" firstAttribute="top" secondItem="GxS-8A-1sq" secondAttribute="bottom" id="O0i-Lz-uOi"/>
+                            <constraint firstItem="43k-MO-HNs" firstAttribute="height" secondItem="O8E-Tb-Jmc" secondAttribute="height" id="OrX-WN-ECg"/>
+                            <constraint firstItem="O8E-Tb-Jmc" firstAttribute="width" secondItem="KEh-q5-nAx" secondAttribute="width" id="PHC-iy-DCK"/>
+                            <constraint firstItem="DvI-NI-tRk" firstAttribute="centerX" secondItem="hX4-bn-71R" secondAttribute="centerX" id="PUu-M1-vUZ"/>
+                            <constraint firstItem="43k-MO-HNs" firstAttribute="top" secondItem="O8E-Tb-Jmc" secondAttribute="bottom" id="QK1-AN-Luo"/>
+                            <constraint firstItem="hCs-Lt-5jp" firstAttribute="width" secondItem="KEh-q5-nAx" secondAttribute="width" id="QRn-ea-kFu"/>
+                            <constraint firstItem="KEh-q5-nAx" firstAttribute="top" secondItem="Kjf-yI-vqw" secondAttribute="bottom" id="Qxq-jQ-Qxx"/>
+                            <constraint firstItem="O8E-Tb-Jmc" firstAttribute="top" secondItem="hCs-Lt-5jp" secondAttribute="bottom" id="TRO-UE-0iP"/>
+                            <constraint firstItem="Kjf-yI-vqw" firstAttribute="width" secondItem="Erm-Iu-k91" secondAttribute="width" id="TwT-0G-UNZ"/>
+                            <constraint firstItem="JId-1I-Sfj" firstAttribute="top" secondItem="43k-MO-HNs" secondAttribute="bottom" id="UYy-Ma-fol"/>
+                            <constraint firstItem="GxS-8A-1sq" firstAttribute="top" secondItem="DvI-NI-tRk" secondAttribute="bottom" id="WP9-fz-Tcj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hX4-bn-71R" secondAttribute="trailing" id="X4t-CF-YBi"/>
+                            <constraint firstItem="g3D-02-0Mp" firstAttribute="height" secondItem="JId-1I-Sfj" secondAttribute="height" id="XOB-NU-gPe"/>
+                            <constraint firstItem="GxS-8A-1sq" firstAttribute="centerX" secondItem="DvI-NI-tRk" secondAttribute="centerX" id="YEV-RB-kRP"/>
+                            <constraint firstItem="g3D-02-0Mp" firstAttribute="width" secondItem="JId-1I-Sfj" secondAttribute="width" id="Yi7-pt-vBg"/>
+                            <constraint firstItem="g3D-02-0Mp" firstAttribute="top" secondItem="JId-1I-Sfj" secondAttribute="bottom" id="ZS3-Za-uCB"/>
+                            <constraint firstItem="DvI-NI-tRk" firstAttribute="width" secondItem="hX4-bn-71R" secondAttribute="width" id="a6i-hW-C8G"/>
+                            <constraint firstItem="DvI-NI-tRk" firstAttribute="top" secondItem="hX4-bn-71R" secondAttribute="bottom" id="bX4-ZF-XrP"/>
+                            <constraint firstItem="O8E-Tb-Jmc" firstAttribute="height" secondItem="KEh-q5-nAx" secondAttribute="height" id="cIB-Kz-iUo"/>
+                            <constraint firstItem="Kjf-yI-vqw" firstAttribute="height" secondItem="Erm-Iu-k91" secondAttribute="height" id="ftx-ZP-LIa"/>
+                            <constraint firstItem="43k-MO-HNs" firstAttribute="centerX" secondItem="O8E-Tb-Jmc" secondAttribute="centerX" id="lZa-g3-dkq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="hX4-bn-71R" secondAttribute="leading" id="lk0-Yr-Zbd"/>
+                            <constraint firstItem="KEh-q5-nAx" firstAttribute="width" secondItem="Kjf-yI-vqw" secondAttribute="width" id="m7O-cU-kpn"/>
+                            <constraint firstItem="g3D-02-0Mp" firstAttribute="centerX" secondItem="JId-1I-Sfj" secondAttribute="centerX" id="mbq-Ca-wb8"/>
+                            <constraint firstItem="Erm-Iu-k91" firstAttribute="centerX" secondItem="GxS-8A-1sq" secondAttribute="centerX" id="qE8-jY-EhE"/>
+                            <constraint firstItem="JId-1I-Sfj" firstAttribute="width" secondItem="43k-MO-HNs" secondAttribute="width" id="qk7-fi-FwC"/>
+                            <constraint firstItem="hCs-Lt-5jp" firstAttribute="centerX" secondItem="KEh-q5-nAx" secondAttribute="centerX" id="qp6-rF-dHO"/>
+                            <constraint firstItem="JId-1I-Sfj" firstAttribute="centerX" secondItem="43k-MO-HNs" secondAttribute="centerX" id="vql-lE-Z2V"/>
+                            <constraint firstItem="O8E-Tb-Jmc" firstAttribute="top" secondItem="KEh-q5-nAx" secondAttribute="bottom" id="zUu-4W-Nq2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Xy-Xb-pUn"/>
+                                <exclude reference="zUu-4W-Nq2"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="p0o-dM-MqA"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="980" y="376"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vNW-gJ-nzd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A9W-Oh-Lo5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HUj-jD-d1G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VLq-XR-3DU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8jb-Y5-9qJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168" y="376"/>
         </scene>
     </scenes>
 </document>
